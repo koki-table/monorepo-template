@@ -1,3 +1,18 @@
+## docker
+```
+docker build -t nestjs-app .
+docker run --rm -p 3001:3001 nestjs-app
+```
+
+## prisma
+```
+npx prisma migrate dev
+マイグレーションコマンドがエラーになる場合は、下記で対応
+（https://zenn.dev/tatsuyasusukida/articles/why-prisma-migrate-dev-fails-in-myql）
+
+npx prisma db push 
+```
+
 # REST API Example
 
 This example shows how to implement a **REST API** using [NestJS](https://docs.nestjs.com/) and [Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client). The example uses an SQLite database file with some initial dummy data which you can find at [`./prisma/dev.db`](./prisma/dev.db). The example was bootstrapped using the NestJS CLI command `nest new rest-nestjs`.
