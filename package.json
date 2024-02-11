@@ -20,7 +20,8 @@
   },
   "packageManager": "yarn@1.22.21",
   "workspaces": [
-    "apps/*",
+    "apps/docs/*",
+    "apps/web/*",
     "packages/*"
   ]
 }
