@@ -1,6 +1,8 @@
+"use client"
+
 import Image from "next/image";
-import { Card } from "@repo/ui/component/card";
-import { Button } from "@repo/ui/component/button";
+import { Card } from "@repo/ui/card";
+import { Button } from "@repo/ui/button";
 
 function Gradient({
   conic,
